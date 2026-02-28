@@ -1,0 +1,229 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Is anyone there?",
+        "Can you help me?",
+        "Hi there",
+        "Hello chatbot"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What would you like to know?",
+        "Hey! Welcome. How can I assist you?",
+        "Greetings! Ask me anything about our courses."
+      ]
+    },
+    {
+      "tag": "about",
+      "patterns": [
+        "Tell me about your institute",
+        "About your organization",
+        "Who are you?",
+        "What is this platform?",
+        "About company",
+        "What do you do?"
+      ],
+      "responses": [
+        "We are a training institute offering skill-based courses for students and professionals.",
+        "Our institute provides practical training in Python, Data Science, and Web Development.",
+        "We focus on career-oriented programs with real-time projects."
+      ]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "Course",
+        "courses",
+        "COURSES",
+        "What courses do you offer?",
+        "Tell me about courses",
+        "Available programs",
+        "List of courses",
+        "What programs are available?",
+        "Do you provide Python course?",
+        "Data science course available?",
+        "Web development training?"
+      ],
+      "responses": [
+        "We offer Python, Data Science, Web Development, and Machine Learning courses.",
+        "Our popular programs include Python Programming and Full Stack Web Development.",
+        "You can enroll in Python, Data Science, or Web Development courses."
+      ]
+    },
+    {
+      "tag": "python_course",
+      "patterns": [
+        "Python",
+        "PYTHON",
+        "python",
+        "Tell me about Python course",
+        "Python details",
+        "Duration of Python course",
+        "Python syllabus",
+        "Is Python beginner friendly?",
+        "What will I learn in Python?"
+      ],
+      "responses": [
+        "Our Python course covers basics to advanced topics including OOP, projects, and interview preparation.",
+        "The Python course duration is 3 months with practical sessions.",
+        "Yes, our Python course is beginner-friendly and includes hands-on projects."
+      ]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "Fee",
+        "fee",
+        "Fees",
+        "fees",
+        "FEES",
+        "What is the fee?",
+        "Course cost",
+        "How much does it cost?",
+        "Fee structure",
+        "Is there any discount?",
+        "What is the price of Python course?"
+      ],
+      "responses": [
+        "The average fee is ₹25,000 per course.",
+        "Course fees range between ₹20,000 to ₹30,000 depending on the program.",
+        "We also offer installment payment options."
+      ]
+    },
+    {
+      "tag": "discount",
+      "patterns": [
+        "DISCOUNTS",
+        "discounts",
+        "DISCOUNT",
+        "discount",
+        "Discount",
+        "Discounts",
+        "Any offers?",
+        "Discount available?",
+        "Scholarship?",
+        "Fee concession?",
+        "Any promo code?"
+      ],
+      "responses": [
+        "We offer seasonal discounts for early registrations.",
+        "Yes, scholarships are available for eligible students.",
+        "Please contact our support team for current offers."
+      ]
+    },
+    {
+      "tag": "timings",
+      "patterns": [
+        "timing",
+        "Timing", 
+        "timings",
+        "Timings",
+        "Class timings?",
+        "When are classes?",
+        "Schedule",
+        "Weekend batch available?",
+        "Daily timings?",
+        "Online class timing?"
+      ],
+      "responses": [
+        "Classes run from 10 AM to 4 PM, Monday to Friday.",
+        "We offer both weekday and weekend batches.",
+        "Online classes are available in the evening from 6 PM to 8 PM."
+      ]
+    },
+    {
+      "tag": "mode",
+      "patterns": [
+        "mode",
+        "Mode",
+        "MODE",
+        "online or offline",
+        "Is this online or offline?",
+        "Do you provide online classes?",
+        "Offline training available?",
+        "Mode of learning?",
+        "Virtual classes?"
+      ],
+      "responses": [
+        "We provide both online and offline training.",
+        "You can choose either classroom or virtual learning mode.",
+        "Yes, online live sessions are available."
+      ]
+    },
+    {
+      "tag": "placement",
+      "patterns": [
+        "placement",
+        "Placement",
+        "Do you provide placement?",
+        "Placement assistance?",
+        "Job support?",
+        "Interview preparation?",
+        "Will you help in getting job?"
+      ],
+      "responses": [
+        "Yes, we provide placement assistance and interview preparation.",
+        "We offer resume building and mock interview sessions.",
+        "Job support is included in our advanced programs."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "contact",
+        "Contact details",
+        "How to reach you?",
+        "Phone number",
+        "Email address",
+        "Support number?",
+        "Customer care?"
+      ],
+      "responses": [
+        "You can contact us at +91-9876543210.",
+        "Email us at support@yourinstitute.com.",
+        "Our support team is available from 9 AM to 6 PM."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "Thank you",
+        "Thanks",
+        "Thanks a lot",
+        "Appreciate it",
+        "Great help"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Glad I could assist you."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "bye",
+        "byee",
+        "Goodbye",
+        "See you",
+        "Catch you later",
+        "Talk to you later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "See you soon!",
+        "Take care!"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+/* ===== Background Image ===== */
+/* IMPORTANT: allow full-page background */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* ===== Full Background Robot Image ===== */
+body {
+    background-image: url("https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1920&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ===== Main Container ===== */
+.container {
+    width: 60%;
+    max-width: 760px;
+    padding: 25px;
+
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+
+    box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+
+/* ===== Title ===== */
+h2 {
+    text-align: center;
+    color: #1e3a8a;
+}
+
+/* ===== Chatbox ===== */
+.chatbox {
+    background: rgba(255,255,255,0.92);
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 14px;
+}
+
+/* ===== Messages ===== */
+.user {
+    background: #dbeafe;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
+    text-align: right;
+}
+
+.bot {
+    background: #f1f5f9;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+/* ===== Input ===== */
+form {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    padding: 12px 22px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}

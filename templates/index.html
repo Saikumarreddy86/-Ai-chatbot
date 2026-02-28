@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>💬 AI Chatbot</h2>
+
+    <div class="chatbox" id="chat-content">
+        <!-- Messages appear here -->
+    </div>
+
+    <form id="chat-form">
+        <input id="message" name="message" placeholder="Type your message..." required />
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<script>
+document.getElementById("chat-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const input = document.getElementById("message");
+    const message = input.value.trim();
+    if (!message) return;
+
+    const chatContent = document.getElementById("chat-content");
+
+    chatContent.innerHTML += `<div class="user"><b>You:</b> ${message}</div>`;
+
+    const thinkingDiv = document.createElement("div");
+    thinkingDiv.className = "bot thinking";
+    thinkingDiv.innerHTML = "Bot is typing<span class='dots'></span>";
+    chatContent.appendChild(thinkingDiv);
+
+    chatContent.scrollTop = chatContent.scrollHeight;
+    input.value = "";
+
+    const response = await fetch("/chat", {
+        method: "POST",
+        body: new URLSearchParams({ message: message })
+    });
+
+    const html = await response.text();
+    chatContent.innerHTML = html;
+    chatContent.scrollTop = chatContent.scrollHeight;
+});
+</script>
+
+</body>
+</html>
